@@ -1,0 +1,21 @@
+.header {
+    min-height: 100vh;
+}
+.form-outer-container {
+    width: 100%;
+    background: #1D1D1D;
+    border-radius: 10px;
+    padding: 5rem;
+}
+.form-container {
+    width: 90%;
+}
+input, textarea {
+    background: #414141;
+    border: none;
+}
+
+
+/* input.ng-invalid.ng-touched {
+    border: 1px solid red;
+} */

@@ -1,0 +1,59 @@
+<div class="header">
+
+  <div class="form-outer-container">
+    <div class="container">
+      <h1>Contact Me</h1>
+      <form [formGroup]="contactForm" (ngSubmit)="onSub()" class="my-5 form-container">
+        <!-- Name input -->
+        <div class=" mb-4 col-lg-6">
+          <input type="text" id="name" class="form-control" placeholder="Name"
+          formControlName="name"
+          />
+          <small class="text-danger" *ngIf="name.invalid && (name.dirty && name.touched)">Name must contain atleast 2 letters</small>
+        </div>
+      
+        <!-- Email input -->
+        <div class="mb-4">
+          <input type="email" id="email" class="form-control" placeholder="Email Adress" 
+          formControlName="email"
+          />
+          <small class="text-danger" *ngIf="email.invalid && (email.dirty && email.touched)">Please write a valid email adress</small>
+        </div>
+
+        <!-- Subject input -->
+
+        <div class=" mb-4">
+          <input type="text" id="subject" class="form-control" placeholder="subject"
+          formControlName="subject"
+          />
+          <small class="text-danger" *ngIf="subject.invalid && (subject.dirty && subject.touched)">Subject must contain atleast 2 letters</small>
+        </div>
+      
+        <!-- Message input -->
+        <div class="mb-4">
+          <textarea class="form-control" id="message" rows="4" placeholder="Message" formControlName="message"
+          ></textarea>
+          <small class="text-danger" *ngIf="message.invalid && (message.dirty && message.touched)">Message must contain atleast 10 letters</small>
+        </div>
+      
+        <!-- Checkbox -->
+        <div class="form-check d-flex justify-content-center mb-4">
+          <input
+            class="form-check-input me-2"
+            type="checkbox"
+            value=""
+            id="form4Example4"
+            checked
+          />
+          <label class="form-check-label" for="form4Example4">
+            Send me a copy of this message
+          </label>
+        </div>
+      
+        <!-- Submit button --> 
+        <button [disabled]="!contactForm.valid" [class.btn-light]="!contactForm.valid" type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+      </form>
+    </div>
+  </div>
+
+</div>

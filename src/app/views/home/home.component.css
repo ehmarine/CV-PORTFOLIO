@@ -1,0 +1,126 @@
+.header {
+    min-height: 100vh;
+    
+}
+
+.container-home {
+    padding-top: 6rem;
+    /* height: 100vh; */
+    /* width: auto; */
+}
+img {
+max-width: 100%;
+z-index: -1;
+opacity: 0.1;
+position: absolute;
+top:30px;
+right: 0;
+bottom: 0;
+left: 50;
+
+    -webkit-animation: pulse 8s infinite ease-in-out;
+    -o-animation: pulse 8s infinite ease-in-out;
+    -ms-animation: pulse 8s infinite ease-in-out; 
+    -moz-animation: pulse 8s infinite ease-in-out; 
+    animation: pulse 8s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% { opacity: 0; }
+    50% {opacity: .1; }
+    100% {opacity: 0; }
+}
+p {
+  color: #8E8383;
+}
+.title-name {
+  margin-bottom: 2rem;
+  max-width: 50%;
+}
+h1 {
+  font-family: 'Spectral', serif; 
+}
+h5 {
+    color: #66BFED;
+    cursor: pointer;
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+h5:hover {
+    color: #D4B844;
+    
+}
+button {
+    padding: .8rem;
+    margin-top: .6rem;
+    margin-bottom: 2rem;
+    border-radius: 7px;
+    background: #000;
+    color: #D4B844;
+    border: 1px solid #D4B844;
+    transition: 400ms ease-out;
+    user-select: none;
+}
+button:hover {
+    color: #fff;
+    background: #D4B844;
+}
+
+
+
+/* FADE IN CSS EFFECT */
+
+.fade-in {
+    animation: fadeIn ease 6s;
+    -webkit-animation: fadeIn ease 6s;
+    -moz-animation: fadeIn ease 6s;
+    -o-animation: fadeIn ease 6s;
+    -ms-animation: fadeIn ease 6s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
+
+  }
+
+  
