@@ -11,9 +11,11 @@
     width: 90%;
 }
 input, textarea {
+    
     background: #414141;
     border: none;
 }
+
 
 
 /* input.ng-invalid.ng-touched {
